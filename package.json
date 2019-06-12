@@ -1,0 +1,17 @@
+{
+  "name": "backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backup.js",
+  "scripts": {
+    "start": "forever -a -o forever.log -e error.log start backup.js",
+    "restart": "forever -a -o forever.log -e error.log restart backup.js",
+    "stop": "forever stop backup.js",
+    "node": "node backup.js"
+  },
+  "author": "Kayne Ruse",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.7.1"
+  }
+}
