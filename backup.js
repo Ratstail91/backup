@@ -48,7 +48,7 @@ const job = new CronJob('0 0 * * * *', () => {
 	//touch
 //	fs.closeSync(fs.openSync(path.join(dirpath, `${getDateString()}`), 'w'));
 
-	let child = exec(`mysqldump -h ${config.host} -P ${config.port} -u ${config.username} -p${config.password} ${config.database} > ${path.join(dirpath, `${getDateString()}`)}.sql`);
+	exec(`mysqldump -h ${config.host} -P ${config.port} -u ${config.username} -p${config.password} ${config.database} > ${path.join(dirpath, `${getDateString()}`)}.sql`);
 });
 
 //kick off
