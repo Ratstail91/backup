@@ -12,6 +12,7 @@
   "author": "Kayne Ruse",
   "license": "ISC",
   "dependencies": {
-    "cron": "^1.7.1"
+    "cron": "^1.7.1",
+    "forever": "^1.0.0"
   }
 }
